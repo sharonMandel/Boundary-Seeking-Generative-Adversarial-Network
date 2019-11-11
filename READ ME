@@ -1,1 +1,13 @@
+This project analyzes the different BGAN outputs based on the different inputs (discrete and continuous variables), 
+and why BGAN is an improvement over its predecessor (GAN). 
+As part of the experiments, we have decided to conduct a completely new experiment:
+Using a CIFAR10 database as a continuous image setting vs. quantized, pre-trained CIFAR10 as a discrete image setting.
 
+
+BGAN implementation and experiments Conclusion:
+In the optimal case, the discriminator loss has low variance and goes down over time.
+In the worst-case scenario, the discriminator loss has huge variance.
+If the generator loss steadily decreases, it is fooling the discriminator with garbage.
+The article has shown that the improvement of BGAN vs. GAN is a result of the number of iterations - the number of changes to the discriminator in relation to the generator.
+We have seen that the optimal learning rate is 1e-4. Despite this low learning rate, 
+the iteration number is still low. We have seen that the improvement of the model affected the results.
