@@ -8,6 +8,7 @@ BGAN implementation and experiments Conclusion:
 In the optimal case, the discriminator loss has low variance and goes down over time.
 In the worst-case scenario, the discriminator loss has huge variance.
 If the generator loss steadily decreases, it is fooling the discriminator with garbage.
-The article has shown that the improvement of BGAN vs. GAN is a result of the number of iterations - the number of changes to the discriminator in relation to the generator.
+The article has shown that the improvement of BGAN vs. 
+GAN is a result of the number of iterations - the number of changes to the discriminator in relation to the generator.
 We have seen that the optimal learning rate is 1e-4. Despite this low learning rate, 
 the iteration number is still low. We have seen that the improvement of the model affected the results.
